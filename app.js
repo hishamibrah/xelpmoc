@@ -7,9 +7,9 @@ const morgan = require('morgan');
 
 //const recipeRoutes = require('./api/routes/recipes');
 const userRoutes = require('./api/routes/users');
-//const cors = require('cors');
+const cors = require('cors');
 
-//app.use(cors());
+app.use(cors());
 
 mongoose.connect('mongodb+srv://xelpmoc:xelpmocpass@cluster0-0jxp7.mongodb.net/test?retryWrites=true&w=majority',{
   useNewUrlParser: true,
